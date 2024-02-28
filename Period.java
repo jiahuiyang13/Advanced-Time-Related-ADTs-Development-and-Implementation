@@ -8,7 +8,7 @@ import java.util.TimeZone;
  * A time period within historical time.
  */
 public class Period {
-	// TODO: Choose fields
+	//Choose fields
 	//variables
 	private final Time start;
 	private final Time stop;
@@ -21,7 +21,7 @@ public class Period {
 	 * @param l length, must not be null
 	 */
 	public Period(Time s, Duration l) throws NullPointerException{
-		// TODO
+		//  
 		//if start time and length are not null, start time and l duration are added together
 		if (s != null && l != null) {
 			this.start = s;
@@ -41,7 +41,7 @@ public class Period {
 	 * @param to end time, must not be null or before the start time
 	 */
 	public Period(Time from, Time to) throws NullPointerException{
-		// TODO
+		//  
 		//if end time and start time are not null and end time is not before start time
 		//start time and stop time give a period
 		if (from != null && to != null || from.compareTo(to) == 1) {
@@ -61,7 +61,7 @@ public class Period {
 	 * @param end end time of the period.
 	 */
 	public Period(Duration len, Time end) throws NullPointerException{
-		// TODO
+		//  
 		//if length is not null, end time and length are subtracted to get the start time
 		if (len != null) {
 			this.length = len;
@@ -79,7 +79,7 @@ public class Period {
 	 * @return beginning time
 	 */
 	public Time getStart() {
-		return this.start; // TODO
+		return this.start; //  
 	}
 	
 	/**
@@ -87,7 +87,7 @@ public class Period {
 	 * @return end time
 	 */
 	public Time getStop() {
-		return this.stop; // TODO
+		return this.stop; //  
 	}
 	
 	/**
@@ -97,7 +97,7 @@ public class Period {
 	public Duration getLength() {
 		//length is the duration between start and end
 		this.length = start.difference(stop);
-		return this.length; // TODO
+		return this.length; //  
 	}
 	
 	@Override // implementation
@@ -107,17 +107,17 @@ public class Period {
 			Period y = (Period) x;
 			//tests if start times and end times are equal between argument and THIS
 			return this.start.equals(y.start) && this.stop.equals(y.stop);
-		} // TODO
+		} //  
 	}
 	
 	@Override // implementation
 	public int hashCode() {
-		return Objects.hash(this.start, this.stop); // TODO
+		return Objects.hash(this.start, this.stop); //  
 	}
 	
 	@Override // implementation
 	public String toString() {
-		return "[" + this.start + "; " + getLength() + "]" ; // TODO
+		return "[" + this.start + "; " + getLength() + "]" ; //  
 	}
 	
 	/**
@@ -154,6 +154,6 @@ public class Period {
 			throw new NullPointerException();
 		}
 		
-		 // TODO
+		 //  
 	}
 	}
