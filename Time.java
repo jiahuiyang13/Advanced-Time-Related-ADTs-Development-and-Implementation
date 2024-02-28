@@ -7,11 +7,13 @@ import java.util.Date;
 import java.util.Objects;
 import java.util.TimeZone;
 
+//Jiahui Yang
+
 /**
  * A point in time.
  */
 public class Time implements Comparable<Time> {
-	// TODO: data structure for Time (very simple)
+	//   data structure for Time (very simple)
 	// The solution also has a private constructor,
 	// which is very useful.
 	private final long point;
@@ -29,7 +31,7 @@ public class Time implements Comparable<Time> {
 		//made point in time the current time
 		this.point = System.currentTimeMillis();
 	
-		// TODO (see homework)
+		//   (see homework)
 	}
 	
 	/**
@@ -45,7 +47,7 @@ public class Time implements Comparable<Time> {
 			//else, current point in time is set to argument
 			this.point = c.getTimeInMillis();
 		}
-		// TODO
+		//  
 	}
 	
 	// Override/implement methods standard for immutable classes.
@@ -59,7 +61,7 @@ public class Time implements Comparable<Time> {
 	}
 	@Override // implementation
 	public int hashCode() {
-		return Objects.hash(point);// TODO: Do something efficient.  Do NOT create a String.
+		return Objects.hash(point);//   Do something efficient.  Do NOT create a String.
 		
 	}
 	@Override // implementation
@@ -107,7 +109,7 @@ public class Time implements Comparable<Time> {
 		else {
 			return y.subtract(x);
 		}
-		 // TODO 
+		 //   
 	}
 
 	/**
@@ -135,7 +137,7 @@ public class Time implements Comparable<Time> {
 			
 		
 		
-		 // TODO 
+		 //   
 	}
 	
 	/**
@@ -159,7 +161,7 @@ public class Time implements Comparable<Time> {
 			Time current = new Time(this.point);
 			return current;
 		}
-		} // TODO 
+		} //   
 	
 	
 	/**
