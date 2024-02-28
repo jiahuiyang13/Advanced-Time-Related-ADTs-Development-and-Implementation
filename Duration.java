@@ -2,6 +2,8 @@ package edu.uwm.cs351;
 
 import java.util.Objects;
 
+//Jiahui Yang
+
 /**
  * An amount of time, always positive.
  * To create a duration, scale an existing duration.
@@ -38,13 +40,13 @@ public class Duration implements Comparable<Duration> {
 			return this.extent == y.extent;
 		}
 		
-		 // TODO 
+		 //   
 	}
 	
 	@Override // implementation
 	public int hashCode() {
 		//returns a unique integer value with hashing algorithm
-		return Objects.hash(extent);// TODO: Do something efficient.  Do NOT create a String.
+		return Objects.hash(extent);//  : Do something efficient.  Do NOT create a String.
 		
 	}
 	
@@ -61,7 +63,7 @@ public class Duration implements Comparable<Duration> {
 		}
 		else {
 			return 0;
-		} // TODO: Remember what compareTo is supposed to return.
+		} //  : Remember what compareTo is supposed to return.
 	}
 	
 	@Override // implementation
@@ -91,7 +93,7 @@ public class Duration implements Comparable<Duration> {
 			return this.extent +".0" + " ms.";
 		}
 		
-		 // TODO
+		 //  
 	}
 	
 	
@@ -149,6 +151,6 @@ public class Duration implements Comparable<Duration> {
 		}
 	}
 	
-	// TODO: three other public methods: subtract, scale & divide
+	//  : three other public methods: subtract, scale & divide
 	// Don't forget to write documentation comments.
 }
